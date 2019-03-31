@@ -11,9 +11,6 @@ public class CostCalculator {
     }
 
     public BigDecimal calculate(int length){
-
-        BigDecimal cost = new BigDecimal("");
-        cost.multiply(unitPrice);
-        return null;
+        return unitPrice.multiply(new BigDecimal(length));
     }
 }
